@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <ul class="public-menu-list">
+    <li
+      *ngFor="let title of menuTitles"
+      (click)="onClick($event)"
+      class="public-menu-item"
+    >
+      <a mat-button [color]="activeLink === title ? 'accent' : '#fff'">{{
+        title
+      }}</a>
+    </li>
+  </ul>
+</mat-toolbar>
